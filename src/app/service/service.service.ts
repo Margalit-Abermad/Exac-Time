@@ -19,7 +19,7 @@ export class ServiceService {
   elementary = ['ג', 'ב', 'א', 'ו', 'ה', 'ד', '', 'ח', 'ז'];
   seminar = ['יא', 'י', 'ט', 'יד', 'יג', 'יב', '', '', ''];
   institution_arr = [this.elementary, this.seminar];
-  students_name = ["מיכל מערבי", "מרגלית אברמד", "שרי מערבי", "מרגלית אברמד", "מיכל מערבי", "מרגלית אברמד", "מיכל מערבי", "מרגלית אברמד", "מיכל מערבי", "מרגלית אברמד", "מיכל מערבי", "מרגלית אברמד", "מיכל מערבי", "מרגלית אברמד", "מיכל מערבי", "מרגלית אברמד", "מיכל מערבי", "מרגלית אברמד",];
+  students_name = ["אברמד2","אברמד1"]; // later will be taken the students details from the DB after the Authenticated 
 
 
   profile = {
