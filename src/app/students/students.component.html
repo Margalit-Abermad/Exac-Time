@@ -1,0 +1,12 @@
+<div class="all main">
+  <div [routerLink]="['/Home/Class-num']" routerLinkActive="active"  class="btn-continue">חזור</div>
+  <div class="comp animate">
+    <div class="logo-div">
+      <div class="text_white">יש לבחור את השם</div>
+    </div>
+    <div class="flex-container">
+      <div  [routerLink]="['/Updated']" routerLinkActive="active" (click)="btn(i)" *ngFor="let i of students_name">{{ i }}</div>
+    </div>
+  </div>
+    <!-- <div class="text">אנא בחרי את שמך</div>  -->
+</div>

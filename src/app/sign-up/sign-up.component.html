@@ -1,0 +1,28 @@
+<form class="modal-content animate" action="" method="post" autocomplete="off">
+  <div class="logo-div">
+      <img  class="DivImg" src="assets\Pictures\Logo.png" alt="No Image">
+  </div>
+  <!-- <br> -->
+<div class="container">
+  <label for="uname"><b>Username</b></label>
+  <span class="SignUp">You have an account? </span><a style="text-decoration: none; color: #00A79D;" [routerLink]="['/LoginManager']" routerLinkActive='active' type="submit">Log-in</a>
+
+  <input type="text" placeholder="Enter Username" name="uname" required>
+
+  <label for="psw"><b>Password</b></label>
+  <input type="password" placeholder="Enter Password" name="psw" required>
+   
+  <label for="psw"><b>Email</b></label>
+  <input type="email" placeholder="Enter Email" name="Eml" required>
+
+  <button type="submit" style="margin-bottom:40px;">Sign Up</button>
+  <label>
+    <input type="checkbox" checked="checked" name="remember"> Remember me
+    <!-- <span class="psw">Forgot <a style="text-decoration: none; color: #00A79D;" href="#">password?</a></span> -->
+  </label>
+</div>
+<div class="container" style="background-color:#f1f1f1; padding: 16px;" >      
+</div>
+</form>
+
+

@@ -1,0 +1,19 @@
+<div class="all main">
+  <div></div>
+  <div class="comp animate">
+    <div class="logo-div">
+      <div class="text_white">יש לבחור את המחזור </div>
+    </div>
+    <div class="flex-container">
+      <div
+        [routerLink]="['/Home/Class-num']"
+        routerLinkActive="active"
+        (click)="btn(i)"
+        *ngFor="let i of institution"
+      >
+        {{ i }}
+      </div>
+    </div>
+  </div>
+  <div></div>
+</div>

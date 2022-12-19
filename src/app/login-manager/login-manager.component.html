@@ -1,0 +1,24 @@
+<form #userForm="ngForm" (ngSubmit)="onSubmit(userForm)" class="modal-content animate" action="" method="post" autocomplete="off">
+  <div class="logo-div">
+      <img  class="DivImg" src="assets\Pictures\Logo.png" alt="No Image">
+  </div>
+  <!-- <br> -->
+<div class="container">
+  <label for="uname"><b>Username</b></label>
+  <span class="SignUp">Need an account?</span><a style="text-decoration: none; color: #00A79D;" [routerLink]="['/SignUp']" routerLinkActive='active' type="submit">sign up</a>
+
+  <input type="text" required [(ngModel)]="model.userName" placeholder="Enter Username" name="userName" >
+
+  <label for="psw"><b>Password</b></label>
+  <input type="password" [(ngModel)]="model.password" placeholder="Enter Password" name="password" required>
+    
+  <button type="submit" style="margin-bottom:40px;">Login</button>
+  <label>
+    <input type="checkbox" checked="checked" name="remember"> Remember me
+  </label>
+</div>
+<div class="container" style="background-color:#f1f1f1; padding: 16px;" >      
+</div>
+</form>
+
+

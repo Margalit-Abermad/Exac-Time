@@ -1,0 +1,47 @@
+* {
+  box-sizing: border-box;
+}
+
+.header{
+  position: sticky;
+  top: 0;
+  display: grid;
+  grid-template-columns: 25% 50% 25%;
+  background-color: #12a89d;
+  width: 100%;
+  height: auto;
+  color: white;
+  text-align: center;
+  margin: 0%;
+  padding: 0%;
+}
+
+.date{
+    text-align: start;
+    margin-left: 10%;
+}
+
+.status{
+  font-size: 150%;
+  text-align: center;
+}
+
+.logo{
+  text-align: end;
+  margin-right: 10%;
+  cursor: pointer;
+}
+
+
+.footer{
+  position: fixed;
+  bottom: 0; 
+  background-color: #12a89d;
+  width: 100%;
+  height: auto;
+  color: white;
+  text-align: center;
+  padding: 0.4%;
+  padding-right: 1.7%;
+  text-align: end;
+}

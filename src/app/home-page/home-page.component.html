@@ -1,0 +1,20 @@
+<header class="header">
+  <div class="date">
+    <h1>{{time.date | date: "HH" }}:{{ time.date | date: "mm" }}:{{ time.date | date: "ss" }}</h1>
+    <h3>
+      {{ time.date | date: "dd" }}/{{ time.date | date: "MM" }}/{{ time.date | date: "yyyy" }}
+    </h3>
+  </div>
+  <div class="status">
+    <h1>{{ time.status }}</h1>
+  </div>
+  <div [routerLink]="['/Login']" routerLinkActive="active" class="logo">
+    <img width="150px" height="auto" src="assets\Pictures\LOGO_S.png" alt="" />
+  </div>
+</header>
+
+<div>
+  <router-outlet></router-outlet>
+</div>
+
+<footer class="footer">©M&M ExacTime</footer>

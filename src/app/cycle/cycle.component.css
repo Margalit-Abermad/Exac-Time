@@ -1,0 +1,105 @@
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.all{
+  display: grid;
+  grid-template-columns: 80% 20%;
+  /* gap: 50px 50px; */
+  width: 100%;
+  height: auto;
+  text-align: center;
+  margin: 0%;
+  padding: 0%;
+}
+
+.text{
+  text-align: end;
+  margin-right: 20%;
+  font-size: 400%;
+}
+
+.text_white{
+  /* color: white; */
+  color: #12a89d;
+  text-align: center;
+  font-size: 200%;
+}
+
+
+.comp{
+  position:absolute;
+  width: 80%;
+  /* width: 70%; */
+  height: auto;
+  /* height: 80%; */
+  border: 2px #12a89d solid;
+  text-align: center;
+  margin-left: 10%;
+  margin-top: 2%;
+}
+
+.logo-div {
+  background-color: white;
+  /* background-color: #00A79D; */
+  border: 2px #12a89d solid;
+  height: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.flex-container {
+  background-color: #12a89d;
+  display: flex;
+  flex-wrap: wrap;
+  /* width: 95%; */
+  /* margin: 1%;  */
+  /* margin-left: 2%; */
+}
+
+.flex-container > div {
+  background-color: #f1f1f1;
+  /* width: 32.6%; */
+  width: 33%;
+  /* height: 3em; */
+  height: 2em;
+  text-align: center;
+  align-items: center;
+  font-size: 50px;
+  padding: 0%;
+  margin: 0.16%;
+  /* border: 1px #12a89d solid; */
+  cursor: pointer;
+}
+
+/* Add Zoom Animation */
+.animate {
+  -webkit-animation: animatezoom 0.6s;
+  animation: animatezoom 0.6s
+}
+
+@-webkit-keyframes animatezoom {
+  from {
+    -webkit-transform: scale(0)
+  }
+
+  to {
+    -webkit-transform: scale(1)
+  }
+}
+
+@keyframes animatezoom {
+  from {
+    transform: scale(0)
+  }
+
+  to {
+    transform: scale(1)
+  }
+}
+
+.main{
+  display: grid;
+  grid-template-columns: 10% 70% 20%;
+}

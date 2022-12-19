@@ -1,0 +1,19 @@
+<div class="all main">
+  <div [routerLink]="['/Home/Cycle']" routerLinkActive="active"  class="btn-continue">חזור</div>
+  <div class="comp animate">
+    <div class="logo-div">
+      <div class="text_white">יש לבחור את מספר הכיתה </div>
+    </div>
+    <div class="flex-container">
+      <div
+        [routerLink]="['/Home/Students']"
+        routerLinkActive="active"
+        (click)="btn(i)"
+        *ngFor="let i of number_class"
+      >
+        {{ i }}
+      </div>
+    </div>
+  </div>
+  <!-- <div class="text">אנא בחרי את מספר הכיתה בו את לומדת</div> -->
+</div>
