@@ -10,7 +10,6 @@
 // import { BsModalService } from 'ngx-bootstrap/modal';
 // import { BsModalRef } from 'ngx-bootstrap/modal';
 
-
 // @Component({
 //   selector: 'app-root',
 //   templateUrl: './app.component.html',
@@ -33,18 +32,13 @@
 //     }
 //   }
 
-
-
 //   idleState = 'Not started.';
 //   timedOut = false;
 //   lastPing?: Date;//=null
 //   title1 = 'angular-idle-timeout';
 
-
 //     @ViewChild('childModal', { static: false })
 //   childModal!: ModalDirective;
-
-
 
 //   constructor(private idle: Idle, private keepalive: Keepalive, private router: Router, private service: ServiceService) {
 //     // sets an idle timeout of 5 seconds, for testing purposes.
@@ -114,20 +108,11 @@
 //     this.service.setUserLoggedIn(false);
 //     this.router.navigate(['/']);
 //   }
-
-
 //   // }
 
 // }
 
-
-
-
-
 ////the newwww
-
-
-
 import { Component, ViewChild, TemplateRef, ElementRef, AfterViewInit } from '@angular/core';
 import { Router } from '@angular/router';
 
@@ -153,7 +138,6 @@ export class AppComponent {
   title = 'angular-idle-timeout';
 
   public modalRef: BsModalRef | undefined;
-
 
   @ViewChild('childModal', { static: false }) childModal!: ModalDirective ;//| undefined;
 
@@ -204,7 +188,6 @@ export class AppComponent {
         idle.stop();
       }
     })
-
     // this.reset();
   }
 
@@ -228,5 +211,4 @@ export class AppComponent {
     this.service.setUserLoggedIn(false);
     this.router.navigate(['/']);
   }
-
 }

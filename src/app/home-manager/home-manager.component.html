@@ -9,12 +9,24 @@
     <h1>{{ time.status }}</h1>
   </div>
   <div [routerLink]="['/Login']" routerLinkActive="active" class="logo">
-    <img width="150px" height="auto" src="assets\Pictures\LOGO_S.png" alt="" />
+    <!-- <img width="150px" height="auto" src="assets\Pictures\LOGO_S.png" alt="" /> -->
+    <img width="150px" height="auto" src="assets\Pictures\big_Logo_PNG.png" alt="" />
   </div>
 </header>
 
-<div>
-  <button  [routerLink]="['/Login']" routerLinkActive="active" >Log out</button>
+<!-- <div>
+  <button [routerLink]="['/Login']" routerLinkActive="active">Log out</button>
+</div> -->
+
+<div id="mySidenav" class="sidenav">
+  <a href="#" id="Manaager" [routerLink]="['/Login']" routerLinkActive="active">התנתק</a>
 </div>
+
+<div class="container">
+<button routerLinkActive="active">לצפייה בנתוני תלמיד</button>
+<button routerLinkActive="active">לצפייה בנתוני כיתה</button>
+<button routerLinkActive="active">לצפייה בנתוני מחזור</button>
+</div>
+
 
 <footer class="footer">©M&M ExacTime</footer>

@@ -49,9 +49,7 @@ export class ServiceService {
     this.userLoggedIn.next(false);
   }
 
-
- //login 
-
+  //login -> logout
   setUserLoggedIn(userLoggedIn: boolean) {
     this.userLoggedIn.next(userLoggedIn);
   }
@@ -88,7 +86,6 @@ export class ServiceService {
   getStudent() {
     return this.student;
   }
-
 
 
   getProfile() {

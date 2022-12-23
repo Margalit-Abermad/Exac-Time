@@ -1,18 +1,23 @@
-<form #userForm="ngForm" (ngSubmit)="onSubmit(userForm)" class="modal-content animate" action="" method="post" autocomplete="off">
+<form #userForm="ngForm" (ngSubmit)="onSubmit(userForm)" class="modal-content animate"  autocomplete="off" aria-required="true">
+  <!-- action="" method="post" -->
   <div class="logo-div">
-      <img  class="DivImg" src="assets\Pictures\Logo.png" alt="No Image">
+      <!-- <img  class="DivImg" src="assets\Pictures\Logo.png" alt="No Image"> -->
+      <img  class="DivImg" src="assets\Pictures\Logo_PNG.png" alt="No Image">
   </div>
   <!-- <br> -->
 <div class="container">
   <label for="uname"><b>Username</b></label>
   <span class="SignUp">Need an account?</span><a style="text-decoration: none; color: #00A79D;" [routerLink]="['/SignUp']" routerLinkActive='active' type="submit">sign up</a>
 
-  <input type="text" required [(ngModel)]="model.userName" placeholder="Enter Username" name="userName" >
+  <input type="text" [(ngModel)]="model.userName" placeholder="Enter Username" name="userName" required>
 
   <label for="psw"><b>Password</b></label>
   <input type="password" [(ngModel)]="model.password" placeholder="Enter Password" name="password" required>
     
-  <button type="submit" style="margin-bottom:40px;">Login</button>
+  <button [disabled]="userForm.form.invalid" type="submit" style="margin-bottom:40px;">Login</button>
+  <!-- *ngIf="userForm.form.invalid; then content1; else content2" -->
+  <!-- <ng-teplate #content1>then content1 is done</ng-teplate>
+  <ng-teplate #content2>then content2 is done</ng-teplate> -->
   <label>
     <input type="checkbox" checked="checked" name="remember"> Remember me
   </label>
